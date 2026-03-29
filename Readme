@@ -1,0 +1,54 @@
+BitSom BA Assignment 3 — Part 2
+
+Restaurant Menu & Order Management System
+
+Overview
+
+This project implements a Restaurant Order Management System using core Python data structures such as lists and dictionaries. The system performs menu exploration, cart operations, inventory tracking, and sales analysis.
+
+Dataset Used
+
+The assignment uses three main datasets:
+
+Menu → Contains items, categories, prices, and availability
+Inventory → Tracks stock levels and reorder thresholds
+Sales Log → Stores daily orders and revenue details
+Tasks Implemented
+Task 1: Menu Exploration
+Displayed menu grouped by category (Starters, Mains, Desserts)
+Calculated:
+Total items
+Available items
+Most expensive item
+Items priced below ₹150
+Task 2: Cart Operations
+Implemented cart using list of dictionaries
+Features:
+Add items with validation
+Prevent duplicate entries (update quantity instead)
+Remove items from cart
+Update item quantity
+Simulated real order flow
+Generated final bill with:
+Subtotal
+GST (5%)
+Total payable
+Task 3: Inventory Tracker
+Used deep copy to preserve original inventory
+Demonstrated difference between original and backup
+Updated stock after order fulfillment
+Handled insufficient stock cases
+Generated reorder alerts for low stock items
+Task 4: Sales Log Analysis
+Calculated total revenue per day
+Identified best-performing day
+Found most frequently ordered item
+Added new sales data dynamically
+Displayed all orders using enumerate
+Concepts Used
+Dictionaries and nested dictionaries
+Lists and list operations
+Loops and conditional statements
+Functions
+Deep copy (copy.deepcopy)
+String formatting
