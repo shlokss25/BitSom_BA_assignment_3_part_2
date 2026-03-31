@@ -1,22 +1,79 @@
 BITSOM_BA_2511721 
 
-Restaurant Menu & Order Management System
+# Restaurant Menu & Order Management System
 
-Overview
+This project is based on building a simple restaurant order management system using Python. The main idea was to use basic data structures like lists and dictionaries to manage menu, orders and inventory.
 
-This project implements a Restaurant Order Management System using core Python data structures such as lists and dictionaries. The system performs menu exploration, cart operations, inventory tracking, and sales analysis.
+## Overview
 
-Dataset Used
+In this project, I created a system that allows exploring a restaurant menu, adding items to a cart, managing stock, and analyzing sales data. Everything is handled using core Python concepts without using any external libraries.
 
-The assignment uses three main datasets:
+## Dataset Used
 
-Menu → Contains items, categories, prices, and availability
-Inventory → Tracks stock levels and reorder thresholds
-Sales Log → Stores daily orders and revenue details
-Tasks Implemented
-Task 1: Menu Exploration
-Displayed menu grouped by category (Starters, Mains, Desserts)
-Calculated:
+There are three main datasets used in this assignment:
+
+* Menu → contains item name, category, price and availability
+* Inventory → keeps track of stock levels and minimum threshold
+* Sales Log → stores order details and daily revenue
+
+## Tasks Implemented
+
+### Task 1: Menu Exploration
+
+* Displayed menu items category-wise (Starters, Mains, Desserts)
+* Calculated total number of items
+* Checked how many items are available
+* Found the most expensive item
+* Filtered items below ₹150
+
+### Task 2: Cart Operations
+
+* Created a cart using list of dictionaries
+* Added items with proper checks
+* Avoided duplicate entries by updating quantity
+* Removed items from cart
+* Updated item quantity
+
+Also simulated a full order process and generated a bill including:
+
+* Subtotal
+* GST (5%)
+* Final total amount
+
+### Task 3: Inventory Tracker
+
+* Used deep copy to create backup of inventory
+* Compared original and backup to understand changes
+* Updated stock after placing an order
+* Handled cases where stock is not enough
+* Generated alerts when stock is low
+
+### Task 4: Sales Log Analysis
+
+* Calculated total revenue for each day
+* Found the best performing day
+* Identified most ordered item
+* Added new sales records dynamically
+* Displayed all orders using enumerate
+
+## Concepts Used
+
+* Lists and dictionaries
+* Nested data structures
+* Loops and conditions
+* Functions
+* copy.deepcopy
+* Basic string formatting
+
+## Notes
+
+* This project helped me understand how real systems like ordering apps work in a basic way
+* Everything is implemented using core Python only
+
+## Author
+
+Shlok
+
 Total items
 Available items
 Most expensive item
